@@ -5,5 +5,5 @@ accountCity = "Jersey"
 
 console.log("testaa")
 
-console.log(accountId);
+//console.log(accountId);
 console.table([accountEmail,accountId, accountCity])
