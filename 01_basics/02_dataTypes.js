@@ -10,7 +10,7 @@ boolean ->true false
 null -> standalone value
 undefined
 symbol - unique
-
+type of is used to get the type
 object */
 
 console.log(typeof age);
