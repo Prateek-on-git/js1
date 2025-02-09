@@ -7,8 +7,8 @@ let valueinNumber = String(score);
 let isLoggedIn = "fgg"
 
 let booleanIsLoggedIn =  Boolean(isLoggedIn);
-console.log(typeof(booleanIsLoggedIn));
-console.log(booleanIsLoggedIn);
+//console.log(typeof(booleanIsLoggedIn));
+//console.log(booleanIsLoggedIn);
 
 /*
 number ->number
@@ -20,3 +20,17 @@ string ->NaN
 boolean number and string is true
 0, null, undefined  is false
 */
+
+/// Ops
+
+let value = "abc"
+let negValue = value
+
+
+//console.log(negValue);
+
+let str = value+negValue
+
+console.log(str);
+
+
