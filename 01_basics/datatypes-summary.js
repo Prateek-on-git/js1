@@ -33,3 +33,34 @@ myFunction()
 //to know the datatype, use
 // typeof
 // console.log(typeof variablename)
+
+
+
+//memory 
+
+// stack memory(Primitive) and heap memory(Non Primitive)
+
+let myName ="Dexter"
+let a =myName
+a= "bansi"
+console.log(a)
+console.log(myName)
+
+let userOne ={
+    email:"a@a.com",
+    emp:"u1"
+}
+
+
+let userTwo = userOne;
+
+console.log(userOne)
+console.log(userTwo)
+
+userTwo.email = "b@B.com"
+
+
+console.log(userOne)
+console.log(userTwo)
+
+
