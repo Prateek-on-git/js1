@@ -3,8 +3,9 @@ let age = 90
 let isLoggedIn = false
 
 //number
-/*
-bigint
+/*  nbsbnuso
+
+bigint    
 string
 boolean ->true false
 null -> standalone value
