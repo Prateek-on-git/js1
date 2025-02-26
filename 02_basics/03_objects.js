@@ -29,3 +29,4 @@ u1.greeting =function(){
 }
 
 console.log(u1.greeting());
+// console.log(u1)
