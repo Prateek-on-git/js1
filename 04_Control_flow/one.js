@@ -44,3 +44,14 @@ userEmail =[]
 if (userEmail.length===0){
     console.log("Array is Empty");
 }
+
+
+// Nullish Coalescing Operator (??) null undefined
+
+let val1;
+val1 = undefined ?? 15
+console.log(val1)
+
+//Terniary Pperator
+
+// conditon ? true: false
