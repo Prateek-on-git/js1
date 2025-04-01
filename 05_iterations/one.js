@@ -14,3 +14,7 @@ for (let   sdd = 0;   sdd < array.length;   sdd++) {
     const element = array[  sdd];
     
 }
+
+//break & continue -- break for exiting for loop, used with If case.
+//break & continue -- continue for continuing the loop and skipping the detected value, used with If case.
+
