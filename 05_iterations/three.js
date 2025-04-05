@@ -32,7 +32,10 @@ const myObject = {
     "game1": "GTA",
     "game2": "asphalt"
 }
-
-for (const [key, value] of myObject) {
-    console.log(key, ':', value)
+for (const key of myObject) {
+    console.log(key)
 }
+// for (const [key, value] of myObject) {
+//     console.log(key, ':', value)
+// }
+

@@ -5,6 +5,7 @@ const myObject={
 }
 
 for (const key in myObject) {
-   console.log(key)
+   console.log(myObject[key])
         
     }
+//for of doesn't work on objects, for in loop works for object
