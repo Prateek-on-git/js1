@@ -6,5 +6,8 @@ const initalValue = 0;
 const Reducefunc = myNumbers.reduce(
     (accumulator,curentValue)=>accumulator+curentValue,initalValue
 )
+
+
+
 console.log(Reducefunc);
 
