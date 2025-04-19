@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek learns DOM</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white ;
+        }
+    </style>
+</head>
+<body style = "background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>JS</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(langname){
+        const li = document.createElement('li')
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage('react')
+    addLanguage('ts')
+
+    function addOptiLang(langname) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('opti')
+
+
+//edit
+
+const secondlang = document.querySelector("li:nth-child(2)")
+const newLI = document.createElement('li')
+newLI.textContent = "MOJO"
+secondlang.replaceWith(newLI)
+
+</script>
+
+
+</html>
