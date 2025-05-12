@@ -24,13 +24,32 @@
     //     alert("owl click")
     // }
 
-    document.getElementById('owl').addEventListener('click',function(){
-        alert("owl clickedd")
-    })
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owl clickedd")
+    // })
+
+  
+    //to read
+    //false, type of addevent listener, time stamp, default prevented
+    //target, toelements, source elements, current target
+    //client x,y, screenx,screeny, 
+    //alt key, ctrl key, shiftkey pressed or not, Keycode
+    //event bublling,capturing-event propgation
+
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e);
+        alert("images clickedd")
+    },false)
 
     document.getElementById('owl').addEventListener('click',function(e){
-        console.log('e')
-    })
+        console.log(e);
+        alert("owl clickedd")
+        e.stopPropagation()
+    },true)
+    //true,false is for setting up the event direction, false is bubbling and true is capturing
+    
+
 
     // // document.getElementById('owl').onclick = function(){
     // //     alert("owl clicked")
