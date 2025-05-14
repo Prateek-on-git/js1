@@ -20,6 +20,20 @@
 </body>
 <script>
 
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e.target.parentNode)
+        if(e.target.tagName ==='IMG'){
+            console.log(e.target.id)
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        } 
+    },false)
+
+
+
+
+
+
     // document.getElementById('owl').onclick = function () {
     //     alert("owl click")
     // }
@@ -37,18 +51,23 @@
     //event bublling,capturing-event propgation
 
 
-    document.getElementById('images').addEventListener('click',function(e){
-        console.log(e);
-        alert("images clickedd")
-    },false)
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log(e);
+    //     alert("images clickedd")
+    // },false)
 
-    document.getElementById('owl').addEventListener('click',function(e){
-        console.log(e);
-        alert("owl clickedd")
-        e.stopPropagation()
-    },true)
-    //true,false is for setting up the event direction, false is bubbling and true is capturing
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e);
+    //     alert("owl clickedd")
+    //     e.stopPropagation()
+    // },false)
+    // //true,false is for setting up the event direction, false is bubbling UP and true is capturing (REVERSE OF BUBBLING-GOES FROM PARENT TO CLICKED CHILD)
     
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    // e.preventDefault()
+    // console.log("google clicked")
+    // },false)
 
 
     // // document.getElementById('owl').onclick = function(){
