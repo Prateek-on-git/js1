@@ -31,3 +31,37 @@ const setInter = function(){
 </script>
 
 </html>
+
+
+<!-- const randomColor = function(){
+  const hex = '0123456789ABCDEF'
+  let color = '#'
+  for (let i=0;i<6; i++){
+    color +=hex[(Math.floor(Math.random()*16))]
+
+  }
+  return color
+}
+
+// console.log(Math.floor(Math.random()*16));
+// console.log(randomColor());
+let intervalID
+const startChangCol = function(){
+if(!intervalID){
+  intervalID = setInterval(changeBgColor,1500)
+
+}
+  
+  
+function changeBgColor(){
+  document.body.style.backgroundColor = randomColor();
+}
+
+}
+const stopChangCol = function(){
+  clearInterval(intervalID)
+  intervalID = null;
+}
+document.querySelector('#start').addEventListener('click',startChangCol)
+
+document.querySelector('#stop').addEventListener('click',stopChangCol) -->
