@@ -23,10 +23,11 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    // return this
+     return this
 }
 
 const userOne = new User("hitesh", 12, true)
 const userTwo = new User("ChaiAurCode", 11, false)
 // console.log(userOne.constructor);
 console.log(userTwo);
+userTwo.greeting(); 
