@@ -23,7 +23,7 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    // return this
 }
 
 const userOne = new User("hitesh", 12, true)
