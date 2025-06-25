@@ -28,6 +28,11 @@ hero.prateek()
 
 //inheritance
 
+const User = {
+    name: "a",
+    email: "a@a.com"
+}
+
 const Teacher = {
     makevid: true
 }
@@ -36,5 +41,21 @@ const TeachingAssist = {
 }
 const TASupport ={
     makeAssignment:'Js Assign',
-    fullTime: true
+    fullTime: true,
+    __proto__:TeachingAssist
+
 }
+
+Teacher.__proto__ = User
+
+//modern Syntax
+Object.setPrototypeOf(TeachingAssist, Teacher)
+
+let anotherUsername ="Prateek      "
+String.prototype.trueLength = function(){
+    console.log(`${this}`)
+    console.log(`${this.name}`);
+    console.log(`True Length is: ${this.trim().length}`)
+}
+
+anotherUsername.trueLength()
