@@ -28,4 +28,7 @@ const chai = new Teacher("chai","a@a.com",123)
 chai.addCourse()
 
 const tea = new User("tea")
+// tea.addCourse()
 tea.logMe()
+chai.logMe()
+
