@@ -11,9 +11,25 @@
 <script>
     class React{
         constructor(){
-            this.library
+            this.library = "React"
+            this.server = "http://localhost:300"
+            
+          //requirement
+            document
+            .querySelector('button')
+            .addEventListener('click',this.handleclick)
+            .bind(this)
+        
         }
+
+handleclick(){
+    console.log("Clicked")
+    console.log(this.server);
+}
+
     }
+    
+const app = new React()
 </script>
 
 
