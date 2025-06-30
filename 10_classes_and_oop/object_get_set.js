@@ -4,7 +4,7 @@ const User = {
 
 
     get email(){
-        return this.email.toUppercase
+        return this._email.toUpperCase()
     },
 
     set email(value)
@@ -16,4 +16,7 @@ const User = {
 
 
 }
+
+const tea = Object.create(User)
+console.log(tea.email);
 
